@@ -1,0 +1,17 @@
+{
+  "name": "SHL No-spoiler",
+  "description": "Hide match results so can watch site highlight videos",
+  "version": "0.1",
+  "content_scripts":
+  [
+      {
+          "matches": ["http://www.shl.se/*", "https://www.shl.se/*"],
+          "js": ["js/jquery-3.1.1.min.js"]
+      },
+      {
+          "matches": ["http://www.shl.se/*", "https://www.shl.se/*"],
+          "js": ["js/antispoiler.js"]
+      }
+  ],
+  "manifest_version": 2
+}
